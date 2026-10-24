@@ -1,0 +1,14 @@
+# Python 3.8 兼容依赖
+# 注意：torch/torchvision 请按是否有 CUDA 选择安装方式：
+#   CPU:  pip install torch==2.2.2 torchvision==0.17.2 --index-url https://download.pytorch.org/whl/cpu
+#   CUDA: pip install torch==2.2.2 torchvision==0.17.2 --index-url https://download.pytorch.org/whl/cu118
+
+# 深度学习框架（CPU 版）
+torch==2.2.2
+torchvision==0.17.2
+
+# 机器学习与可视化
+scikit-learn>=1.0,<1.4
+matplotlib>=3.5,<3.8
+numpy>=1.21,<1.25
+pillow>=9.0,<10.3

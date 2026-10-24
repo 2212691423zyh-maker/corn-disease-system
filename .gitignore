@@ -1,0 +1,33 @@
+# 1. 环境变量与密钥（绝对禁止上传）
+.env
+.env.local
+*.key
+*.pem
+
+# 2. Python 缓存
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 3. 前端依赖与构建产物
+node_modules/
+dist/
+.vscode/
+
+# 4. 巨大的模型文件（绝对禁止上传，否则 Git 会崩溃）
+backend/models/
+train/outputs/
+train/data/
+
+# 5. 系统垃圾
+.DS_Store
+Thumbs.db
+*.log
+backend/uploads/*
+.vs/
+*.db
+.trae/
+*.log
+*log*.txt
+pip_list.txt
+upload_result*.txt
